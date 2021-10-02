@@ -8,7 +8,7 @@ Compile addresses.c and simulator.c
 
 ```bash
 gcc addresses.c -o addresses.out
-gcc -pthrad simulator.c covidTrace.c -o simulator.c
+gcc -pthread simulator.c covidTrace.c -o simulator.c
 ```
 
 ## Usage

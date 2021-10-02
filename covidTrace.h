@@ -12,7 +12,6 @@
 #include <inttypes.h>
 #include <signal.h>
 
-int num; 
 int maxindex;
 int sleepTime;
 

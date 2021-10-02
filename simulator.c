@@ -52,7 +52,7 @@ int main(int argc, char *argv[]) {
         pthread_create(&tcpu, NULL, cpuThread, cpuptr);
         
         // Get macAddress new entry
-        macaddress currentAddress = BTnearMe(mac);
+        macaddress currentAddress = BTnearMe(mac, num);
 
         // Create arguments for thread functions
         workerArgs *args = malloc(sizeof(workerArgs));

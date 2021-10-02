@@ -10,7 +10,7 @@ uint64_t maxTime = 12000000;           // (12 * 60 * 1000 * 1000 / 100 )us
  
 volatile sig_atomic_t exitRequest = 0;
 
-macaddress BTnearMe(char *addresses[])
+macaddress BTnearMe(char *addresses[], int num)
 {
     struct timespec tv;
     if(clock_gettime(CLOCK_REALTIME, &tv))
